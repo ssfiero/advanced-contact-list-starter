@@ -47,6 +47,12 @@
       "name": "R2D2",
       "occupation": "Droid",
       "avatar": "https://pbs.twimg.com/profile_images/479266377937608704/Yaw8wh-9.jpeg"
+    },
+    {
+      "name": "Frodo",
+      "avatar": "https://upload.wikimedia.org/wikipedia/en/4/4e/Elijah_Wood_as_Frodo_Baggins.png",
+      "occupation": "Hobbit",
+      "_id": 9
     }
   ]
 }

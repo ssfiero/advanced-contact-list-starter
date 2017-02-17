@@ -115,8 +115,8 @@ class App extends Component {
     this.setState({
       selectedContactIds: this.state.selectedContactIds,
       actionLog: this.state.actionLog
-        .concat(`Removed ${this.state.contacts[id - 1].name},
-        ${this.state.contacts[id - 1].occupation}`)
+        .concat(`Removed ${this.state.contacts[contactArray.indexOf(id)].name},
+        ${this.state.contacts[contactArray.indexOf(id)].occupation}`)
     });
   }
 
@@ -137,7 +137,7 @@ class App extends Component {
 
   handleAddContact(attributes) {
     // Adds contact to Contact List with data entered into form
-    axios.post('http://localhost:4000/contacts', attributes)
+    axios.post('/contacts', attributes)
       .then(resp => {
         this.setState({
           contacts: this.state.contacts.concat([resp.data])
@@ -149,7 +149,7 @@ class App extends Component {
 
   handleDeleteContact(_id) {
     // Deletes contact from either Contact List or Selected Contact List
-    axios.delete(`http://localhost:4000/contacts/${_id}`)
+    axios.delete(`/contacts/${_id}`)
       .then(resp => {
         const newContacts = this.state.contacts.filter(contact => contact._id !== _id);
 
