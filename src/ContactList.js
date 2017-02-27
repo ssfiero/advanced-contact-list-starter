@@ -2,7 +2,7 @@ import React from 'react';
 import Contact from './Contact';
 
 // Converted from a class based component to a functional component
-const ContactList = props => {
+const ContactList = (props) => {
   return (
     <ul className="contact-list">
       {props.noContacts}

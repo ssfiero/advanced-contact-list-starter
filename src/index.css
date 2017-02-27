@@ -43,6 +43,17 @@ body {
   padding: 0px 0px 10px 0px;
 }
 
+.search-bar {
+  height: 35px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin: 30px 0px 0px 0px;
+}
+
 .row {
   padding: 0px 20px 0px 20px;
 }
@@ -65,6 +76,8 @@ body {
   padding: 0px;
   text-align: center;
 }
+
+/* Action Log */
 
 .Action-Log {
   padding-left: 0px;
@@ -103,6 +116,12 @@ body {
   cursor: pointer;
 }
 
+.contact .fa:hover {
+  background-color: black;
+  color: #b33d1e;
+  border: 2.5px solid #b33d1e;
+}
+
 .App .Reset {
   margin: 20px 10px 5px 10px;
   font-size: 20px;
@@ -117,6 +136,12 @@ body {
   border-width: 2.5px;
   border-color: black;
   cursor: pointer;
+}
+
+.App .Reset:hover {
+  background-color: black;
+  color: #b33d1e;
+  border: 2.5px solid #b33d1e;
 }
 
 .ResetLog {
@@ -135,25 +160,27 @@ body {
   cursor: pointer;
 }
 
+.ResetLog:hover {
+  background-color: black;
+  color: #b33d1e;
+  border: 2.5px solid #b33d1e;
+}
+
 .noContact {
   font-size: 24px;
   color: #4285f4;
   padding-bottom: 20px;
 }
 
-.search-bar {
-  height: 35px;
-  width: 100%;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 18px;
-  padding: 0 10px;
-  box-sizing: border-box;
-  margin: 30px 0px 0px 0px;
-}
+/* Contact List & Contact */
 
 .contact-list {
   padding: 0;
+  margin-bottom: 50px;
+}
+
+.contact-list a {
+  text-decoration: none;
 }
 
 .contact {
@@ -204,6 +231,8 @@ body {
   color: white;
 }
 
+/* Profile - single page */
+
 .profile {
   display: flex;
   height: 100%;
@@ -213,12 +242,22 @@ body {
   padding: 50px;
 }
 
+.profile .background {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 560px;
+  width: 600px;
+  border-radius: 5px;
+  border: 2.5px solid #b33d1e;
+}
+
 .profile .image-cropper {
   width: 200px;
   height: 200px;
   position: relative;
   overflow: hidden;
   border-radius: 50%;
+  margin: auto;
+  margin-top: 20px;
 }
 
 .profile img {
@@ -228,11 +267,22 @@ body {
   width: auto;
 }
 
+.profile .contact-info {
+  color: white;
+  font-size: 20px;
+}
+
+.profile .contact-info h2 {
+  font-size: 34px;
+}
+
 .row {
   margin: 0 auto;
   text-align: center;
   display: -webkit-inline-box;
 }
+
+/* New Contact Form */
 
 .new-contact-form {
   margin-bottom: 40px;
@@ -273,6 +323,14 @@ body {
   border-width: 2.5px;
   border-color: white;
   cursor: pointer;
+}
+
+.new-contact-form input[type="submit"]:hover {
+  background: white;
+  color: black;
+  border-style: solid;
+  border-width: 2.5px;
+  border-color: black;
 }
 
 .delAction {
