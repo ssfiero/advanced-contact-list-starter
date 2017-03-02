@@ -1,26 +1,32 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
 // Converted from a class based component to a functional component
 const Contact = (props) => {
   return (
-    <Link to={`/profile/${props.id}`} className="contact-link">
-      <li className="contact" onClick={() => props.handleOnClick(props.id)}>
-        <div className="image-cropper">
-          <img src={props.avatar} alt="avatar" />
+    <li className="contact" onClick={() => props.handleOnClick(props.id)}>
+      <div className="image-cropper">
+        <img src={props.avatar} alt="avatar" />
+      </div>
+      <div className="contact-info">
+        <h2>{props.name}</h2>
+        {props.occupation}
+        <div>
+          <Link to={`/profile/${props.id}`} className="contact-link">
+            <button
+              className="details"
+              >Details
+            </button>
+          </Link>
+          <button
+            // Button to delete contact
+            onClick={() => props.onDeleteContact(props.id)}
+            className="fa fa-trash-o"
+            aria-hidden="true"
+          />
         </div>
-        <div className="contact-info">
-          <h2>{props.name}</h2>
-          {props.occupation}
-        </div>
-        <button
-          // Button to delete contact
-          onClick={() => props.onDeleteContact(props.id)}
-          className="fa fa-trash-o"
-          aria-hidden="true"
-        />
-      </li>
-    </Link>
+      </div>
+    </li>
   );
 };
 

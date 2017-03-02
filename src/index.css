@@ -100,8 +100,8 @@ body {
   text-align: center;;
 }
 
-.contact .fa {
-  margin: 20px 10px 5px 10px;
+.contact .fa, .details {
+  margin: 0px;
   font-size: 29px;
   border-radius: 5px;
   color: black;
@@ -114,12 +114,19 @@ body {
   border-width: 2.5px;
   border-color: black;
   cursor: pointer;
+  text-align: center;
+  height: 45px;
+  width: 85px;
 }
 
-.contact .fa:hover {
+.contact .fa:hover, .details:hover {
   background-color: black;
   color: #b33d1e;
   border: 2.5px solid #b33d1e;
+}
+
+.details {
+  font-size: 16px;
 }
 
 .App .Reset {
@@ -189,7 +196,6 @@ body {
   display: flex;
   padding: 20px 0;
   border-bottom: 1px solid #ddd;
-
 }
 
 .contact:first-child {

@@ -4,7 +4,8 @@
       "_id": 1,
       "name": "Chew Bacca",
       "occupation": "Wookie",
-      "avatar": "http://vignette4.wikia.nocookie.net/starwars/images/7/73/Chewbaccaheadshot.jpg/revision/latest?cb=20080815045819"
+      "avatar": "http://vignette4.wikia.nocookie.net/starwars/images/7/73/Chewbaccaheadshot.jpg/revision/latest?cb=20080815045819",
+      "bio": "An immense, fur covered warrior of great strength and loyalty, Chewbacca the Wookiee was a well-known figure in both the underworld and in the Rebel Alliance."
     },
     {
       "_id": 2,

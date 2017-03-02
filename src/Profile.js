@@ -13,7 +13,7 @@ class Profile extends Component {
 
 
   componentDidMount() {
-    axios.get(`/contacts/${this.props.params.id}`)
+    axios.get(`/contacts/${this.props.match.params.id}`)
       .then(resp => {
         this.setState({
           contact: resp.data
@@ -34,6 +34,8 @@ class Profile extends Component {
           <div className="contact-info">
             <h2>Name: {this.state.contact.name}</h2>
             <span>Occupation: {this.state.contact.occupation}</span>
+            <h3>Bio:</h3>
+            <p>{this.state.contact.bio}</p>
           </div>
         </div>
       </div>
@@ -53,7 +55,7 @@ class Profile extends Component {
 
 // ESLint React prop-type validation
 Profile.propTypes = {
-  params: React.PropTypes.object.isRequired,
+  match: React.PropTypes.object.isRequired,
 };
 
 
