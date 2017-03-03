@@ -109,7 +109,7 @@ body {
   padding: 5px 15px;
   font-weight: bold;
   border-width: 2px 0px 0px 0px;
-  margin: 20px 0px 5px 0px;
+  margin: 10px 0px 0px 0px;
   border-style: solid;
   border-width: 2.5px;
   border-color: black;
@@ -205,6 +205,7 @@ body {
 .contact-link {
   text-decoration: none;
   color: inherit;
+  padding-right: 10px;
 }
 
 .contact h2 {
@@ -246,6 +247,10 @@ body {
   justify-content: flex-start;
   flex-direction: column;
   padding: 50px;
+}
+
+.profileLink {
+  display: flex;
 }
 
 .profile .background {

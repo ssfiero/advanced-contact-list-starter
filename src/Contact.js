@@ -11,7 +11,7 @@ const Contact = (props) => {
       <div className="contact-info">
         <h2>{props.name}</h2>
         {props.occupation}
-        <div>
+        <div className="profileLink">
           <Link to={`/profile/${props.id}`} className="contact-link">
             <button
               className="details"
